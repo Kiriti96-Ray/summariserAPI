@@ -4,7 +4,7 @@ import os
 import re
 
 # Set up your OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "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"
 
 def summariser(text):
   #  text = "Hi there,Are your ML and CV teams delivering value or spending most of their time managing and processing training data?We believe AI teams that get ahead are workflow-centric, consistently solving real business problems while designing clear processes for humans, models, and data to do their best work together.If higher speed and deliverability are a priority for your team, we'd love for you to join our live webinar on March 28 at 5 PM GMT | 12 PM ET | 9 AM PT.One of V7’s most experienced AI Researchers, Thomas Varsavsky, and our Head of Sales, Matt Brown, will show how training data pipelines and V7's workflows can drive fast, accurate, and iterative AI in your business.What to expect in our 45-minute webinar"

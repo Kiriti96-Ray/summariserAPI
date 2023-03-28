@@ -1,5 +1,5 @@
 # -*- coding: cp1252 -*-
-from flask import Flask, jsonify
+from flask import Flask, jsonify,request
 import lang
 
 app = Flask(__name__)
@@ -11,9 +11,10 @@ def home():
     return "API is working fine"
 
 
-@app.route('/summariser/<text>')
-def summariser(text):
-    return jsonify(lang.summariser(text))
+@app.route('/summariser',methods=['POST'])
+def summariser():
+    req_data = request.get_json()
+    return jsonify(lang.summariser(req_data['text']))
 
 if __name__ == "__main__":
     #app.debug = True
